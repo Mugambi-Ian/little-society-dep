@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "513997366486",
+    "project_id": "little-society",
+    "storage_bucket": "little-society.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513997366486:android:5ee9d83810667683d89577",
+        "android_client_info": {
+          "package_name": "com.verynice.little_society"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513997366486-0rp1sn69pd7ba5lfti6jvjioqfl7ul3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.verynice.little_society",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "513997366486-8thspkskthffm184eet8d121tk35oj30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB55p3-kRe5g75S5lgooHII5dudr_eJEkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513997366486-8thspkskthffm184eet8d121tk35oj30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
