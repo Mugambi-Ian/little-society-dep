@@ -46,7 +46,7 @@ const style = StyleSheet.create({
     borderWidth: 1,
   },
   title: {
-    fontFamily: 'Quicksand-SemiBold',
+    fontFamily: 'Lexend-SemiBold',
     marginLeft: 20,
     marginRight: 20,
     marginTop: 20,
@@ -54,7 +54,7 @@ const style = StyleSheet.create({
     color: '#000',
   },
   subTitle: {
-    fontFamily: 'Quicksand-Light',
+    fontFamily: 'Lexend-Light',
     marginLeft: 20,
     marginTop: 5,
     marginRight: 20,
@@ -75,7 +75,7 @@ const style = StyleSheet.create({
     color: '#929292',
     marginLeft: 10,
     marginTop: 5,
-    fontFamily: 'Quicksand-Regular',
+    fontFamily: 'Lexend-Regular',
     marginBottom: 5,
   },
   input: {
@@ -84,7 +84,7 @@ const style = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     fontSize: 20,
-    fontFamily: 'Quicksand-Medium',
+    fontFamily: 'Lexend-Medium',
     color: '#000',
   },
   btn: {
@@ -107,7 +107,7 @@ const style = StyleSheet.create({
   loginBtnText: {
     alignSelf: 'center',
     color: '#fff',
-    fontFamily: 'Quicksand-Bold',
+    fontFamily: 'Lexend-Bold',
     fontSize: 20,
     padding: 10,
   },
