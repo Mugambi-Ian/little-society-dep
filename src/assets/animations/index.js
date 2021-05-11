@@ -131,12 +131,16 @@ export const slideInLeft = {
 };
 export const splashIn = {
   0: {
-    translateX: 200,
-    opacity: 0,
+    translateX: 600,
+  },
+  0.15: {
+    translateX: 300,
+  },
+  0.9: {
+    translateX: -20,
   },
   1: {
     translateX: 0,
-    opacity: 1,
   },
 };
 export const splashOut = {

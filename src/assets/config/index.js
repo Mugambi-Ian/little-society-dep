@@ -55,3 +55,24 @@ export function currentTime() {
   const dT = today.getHours() < 12 ? ' am' : ' pm';
   return hr + ':' + min + dT;
 }
+
+export function validEmail(mail) {
+  if (
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+      mail,
+    )
+  ) {
+    return true;
+  }
+  return false;
+}
+
+export function validFields(x) {
+  for (let i = 0; i < x.length; i++) {
+    const e = x[i];
+    if (e.length === 0) {
+      return false;
+    }
+  }
+  return true;
+}

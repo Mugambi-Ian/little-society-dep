@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "adb": "adb reverse tcp:8081 tcp:8081",
-    "scrcpy": "scrcpy"
+    "scrcpy": "scrcpy -m 2080"
   },
   "dependencies": {
     "@react-native-firebase/app": "^10.8.1",

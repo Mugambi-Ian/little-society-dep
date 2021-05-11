@@ -22,7 +22,7 @@ const style = StyleSheet.create({
   mainContent: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#ccfbff',
+    backgroundColor: '#eadbdb',
   },
   logoBox: {
     alignSelf: 'center',
@@ -46,12 +46,12 @@ const style = StyleSheet.create({
     borderWidth: 1,
   },
   title: {
-    fontFamily: 'Lexend-SemiBold',
+    fontFamily: 'Lexend-Bold',
     marginLeft: 20,
     marginRight: 20,
     marginTop: 20,
     fontSize: 20,
-    color: '#000',
+    color: '#5ecbf8',
   },
   subTitle: {
     fontFamily: 'Lexend-Light',
@@ -60,7 +60,7 @@ const style = StyleSheet.create({
     marginRight: 20,
     fontSize: 18,
     marginBottom: 20,
-    color: '#333',
+    color: '#9d9ca4',
   },
   inputField: {
     borderRadius: 5,
@@ -97,7 +97,7 @@ const style = StyleSheet.create({
     marginLeft: 10,
   },
   loginBtn: {
-    backgroundColor: '#118fca',
+    backgroundColor: '#5ecbf8',
     elevation: 2,
     borderRadius: 50,
     flex: 1,
@@ -128,7 +128,7 @@ export default class AuthScreen extends Component {
       <Animatable.View
         animation={this.state.close === false ? slideInRight : slideOutLeft}
         style={style.mainContent}>
-        <StatusBar barStyle="dark-content" backgroundColor="#ccfbff" />
+        <StatusBar barStyle="dark-content" backgroundColor="#eadbdb" />
         <View style={style.logoBox}>
           <Image
             source={require('../../assets/drawable/logo.png')}

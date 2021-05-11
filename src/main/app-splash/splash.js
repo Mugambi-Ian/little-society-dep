@@ -14,7 +14,7 @@ const style = StyleSheet.create({
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#5ecbf8',
   },
   bgImage: {
     position: 'absolute',
@@ -22,13 +22,17 @@ const style = StyleSheet.create({
     width: '100%',
   },
   logo: {
-    width: 350,
+    width: 300,
+    height: 300,
     alignSelf: 'center',
     resizeMode: 'contain',
     justifyContent: 'center',
+    backgroundColor: '#fff',
+    elevation: 2,
+    borderRadius: 30,
   },
   logoImg: {
-    width: 400,
+    width: 250,
     resizeMode: 'contain',
     alignSelf: 'center',
   },
@@ -40,13 +44,10 @@ export default class SplashScreen extends Component {
   };
   async componentDidMount() {
     await setTimeout(async () => {
-      this.setState({out: true});
-      await setTimeout(async () => {
-        this.setState({close: undefined});
-        await setTimeout(() => {
-          this.props.closeSplash();
-        }, 500);
-      }, 1000);
+      this.setState({close: undefined});
+      await setTimeout(() => {
+        this.props.closeSplash();
+      }, 500);
     }, 3000);
   }
   render() {
@@ -55,8 +56,9 @@ export default class SplashScreen extends Component {
         delay={this.state.out ? 400 : 0}
         animation={this.state.close === false ? fadeIn : slideOutLeft}
         style={style.mainContent}>
-        <StatusBar barStyle="light-content" backgroundColor="#fff" />
+        <StatusBar barStyle="light-content" backgroundColor="#5ecbf8" />
         <Animatable.View
+          easing="ease-out-back"
           delay={this.state.out ? 0 : 400}
           animation={this.state.out ? splashOut : splashIn}
           style={style.logo}>

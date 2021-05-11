@@ -13,6 +13,7 @@ import AuthScreen from './src/main/app-auth/auth';
 import SplashScreen from './src/main/app-splash/splash';
 import * as Animatable from 'react-native-animatable';
 import {slideInUp, slideOutUp} from './src/assets/animations';
+import Home from './src/main/app-home/home';
 export default class App extends Component {
   state = {
     authenticated: false,
@@ -81,7 +82,7 @@ export default class App extends Component {
             openTimedSnack={this.openTimedSnack.bind(this)}
           />
         ) : (
-          <View
+          <Home
             init={() => {
               this.setState({bypassAuth: true});
             }}
